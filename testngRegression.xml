@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite - Regression">
+	<groups>
+		<run>
+			<exclude name= "HappyPath"/>
+		</run>
+	</groups>
+	<listeners>
+		<listener class-name = "com.testng.listener.Listener"/>
+	</listeners>
+  <test name="Login Tests">
+    <classes>
+      <class name="com.testng.test.FirstTest"/>
+    </classes>
+  </test>
+  <test name="Instructions Tests">
+    <classes>
+      <class name="com.testng.test.SecondTest"/>
+    </classes>
+  </test>
+  <test name="Logout Tests">
+    <classes>
+      <class name="com.testng.test.ThirdTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
